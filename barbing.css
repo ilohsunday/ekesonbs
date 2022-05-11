@@ -1,0 +1,1103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    background: #040404 url("../background2.jpg") top right no-repeat;
+    left: 0;
+    background-size: cover;
+    background-position: bottom;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
+}
+
+
+body{
+    color: #fff;
+}
+
+#header{
+    height: 100vh;
+}
+
+#navbar{
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    padding: 0 10px;
+}
+
+#navbar-h1{
+    display: nne;
+}
+
+#navbar h1{
+    width: 100%;
+    font-size: 10px;
+    height: 50px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 10px;
+}
+
+#navbar span{
+    font-size: 30px;
+    color: yellow;
+}
+
+ul{
+    background: #000;
+    height: 50px;
+    color: #fff;
+    display: flex;
+    float: right;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+li{
+    list-style: none;
+    margin: 10px;
+    float: right;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+#navbar a::before{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background: yellow;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out 0s;
+    }
+    
+#navbar a:hover::before{
+        visibility: visible;
+        width: 30px;
+    }
+    
+header h1{
+    display: flex;
+    align-items: center;
+    padding-top: 150px;
+    padding-left: 50px;
+    border-bottom: yellow solid 2px;
+    font-size: 50px;
+    width: 80%;
+}
+    
+#span{
+    font-size: 100px;
+    color: yellow;
+}
+
+p{
+    font-size: 25px;
+    text-align: center;
+}
+
+.social{
+    display: flex;
+    margin-top: 50px;
+    padding: 10px 0px 10px 0px;
+}
+
+.social a{
+    height: 50px;
+    width: 50px;
+    padding: 5px 0px 0px 5px;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.social a:hover{
+    background: yellow;
+    border-radius: 50%;
+}
+
+.social img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+/*---About---*/
+
+#about{
+    display: nne;
+    background: rgba(0,0,0,0.7);
+    margin-top: 10px;
+    padding: 4%;
+}
+
+.about-me{
+    margin: 0px 0px 0px 5px;
+} 
+
+#about-me{
+    display: flex;
+}
+
+#about-me p{
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+ #about-me span{
+    height: 1px;
+    width: 100px;
+    display: block;
+    background: white;
+    margin: 7px 0px 0px 5px;
+}
+
+.about-me h3{
+    font-weight: bolder;
+    color: #fff;
+    font-size: 30px;
+}
+
+ #about-bio{
+    display: flex;
+}
+
+#bio-img{
+    height: 50%;
+    width: 30%;
+    
+}
+
+#about-bio h3{
+    color: yellow;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#about-bio p{
+    font-size: 19px;
+} 
+
+.barb{
+    padding: 3% 0% 0% 3%;
+}
+
+/* hair style rate */
+
+.rate{
+    background: rgba(0,0,225,0.2);
+    margin: 50px 0px 0px 0px;
+    padding: 20px 0px 20px 0px; 
+    border-radius: 20px;
+}
+
+.rate h4{
+    text-align: center;
+    color: yellow;
+    font-size: 23px;
+    margin: 50px 0px 0px 0px;
+}
+
+#all-side-cut{
+    display: flex;
+    margin: 10px 0px 0px 0px;
+}
+
+.label{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 80px 0px 50px;
+    background: ble;
+    width: 500%;
+}
+
+.hair-cut{
+    margin-bottom: 10%;
+}
+
+.cut{
+    margin: 0px 0px 0px 70px;
+}
+
+.hair-cut-style{
+    display: flex;
+}
+
+.hair-cut-style .style-cut{
+    font-size: 17px;
+    margin: 0px 0px 0px 0px;
+    width: 100px;
+}
+
+.hair-cut-style p{
+    font-size: 17px;
+    margin: 0px 0px 0px 200px;
+    font-weight: lighter;
+}
+
+.length{
+    background: black;
+    height: 10px;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+}
+
+.length span{
+    background: yellow;
+    height: 10px;
+    width: 100%;
+    animation: length 5s;
+    display: block;
+}
+
+.length .skin-cut{
+    background: yellow;
+    height: 10px;
+    width: 100%;
+    animation: skin_cut 5s;
+    display: block;
+}
+
+.length .low-cut{
+    background: yellow;
+    height: 10px;
+    width: 95%;
+    animation: low_cut 5s;
+    display: block;
+}
+
+.length .side-cut{
+    background: yellow;
+    height: 10px;
+    width: 97%;
+    animation: side_cut 5s;
+    display: block;
+}
+
+.length .round-cut{
+    background: yellow;
+    height: 10px;
+    width: 95%;
+    animation: round_cut 5s;
+    display: block;
+}
+
+.length .afro-cut{
+    background: yellow;
+    height: 10px;
+    width: 93%;
+    animation: afro_cut 5s;
+    display: block;
+}
+
+@keyframes length{
+    from{width:0%;}
+    to{width:100%}
+}
+
+@keyframes skin_cut{
+    0%{width:0%;}
+    100%{width:100%}
+}
+
+@keyframes low_cut{
+    0%{width:0%;}
+    50%{width:100%}
+    100%{width:95%;}
+}
+
+@keyframes side_cut{
+    0%{width:0%;}
+    50%{width:100%}
+    100%{width:97%;}
+}
+
+@keyframes round_cut{
+    0%{width:0%;}
+    50%{width:100%}
+    100%{width:95%;}
+}
+
+@keyframes afro_cut{
+    0%{width:0%;}
+    50%{width:100%}
+    100%{width:93%;}
+}
+
+/* work done */
+
+ #work-done{
+    display: nne;
+    padding: 3% 0 0 0;
+}
+
+#work-done h1{
+    font-size: 50px;
+    color: yellow;
+}
+
+#my-workdone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: solid yellow 2px;
+}
+
+.image-work-done{
+    display: flex;
+    padding: 20px 0px 0px 0px;
+}
+
+.image-work-done img{
+    height: 300px;
+    width: 300px;
+    margin-left: 5px;
+}
+
+button{
+    background: yellow;
+    color: black;
+    height: 40px;
+    width: 120px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    margin: 5px 0px 10px 0px;
+} 
+
+button:hover{
+    background: #000;
+    color: yellow;
+    border: yellow 1px solid;
+}
+
+#service{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 20px 0px 20px;
+    display: nne;
+}
+
+#my-service-heading{
+    margin-bottom: 20px;
+}
+
+.my-service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-service-detail{
+    background: rgba(225,225,225,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    margin-left: 5px;
+    font-size: 20px;
+    margin: 5px 0px 0px 5px;
+}
+
+.my-service-detail img{
+    height: 150px;
+    width: 150px;
+}
+
+/* my contact */
+ #contact{
+    padding: 5% 20px 0px 20px;
+}
+
+#my-contact-heading{
+    margin: 0px 0px 30px 0px;
+}
+
+ #my-contact{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+
+.my-contact-detail{
+    margin-right: 4%;
+}
+
+.my-contact-info{
+    display: flex;
+    background: yellow;
+    color: #000;
+    padding: 5% 10% 5% 10%;
+    margin: 15% 0px 0px 10px;
+    width: 300px;
+    border-radius: 5px;
+} 
+
+.my-contact-info img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+ .input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0px 0px 0px;
+}
+
+.input-text{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+input{
+    background: rgba(24, 23, 23, 0.979);  
+    border: yellow solid .0001rem;
+    outline: none;
+    color: white;
+    height: 30px;
+    margin-bottom: 3%;
+    padding: 5% 1% 5% 1%;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+input::placeholder{
+    color:rgba(255, 255, 255, 0.315);
+}
+
+.textarea{
+    width: 50%;
+}
+
+textarea{
+    min-height: 30vh;
+    max-height: 30vh;
+    min-width: 100%;
+    max-width: 100%;
+    background: rgba(22, 21, 21, 0.3);
+    color: white;
+    border: yellow solid .0001rem;
+    outline: none;
+    padding: 1% 1%;
+    font-size: 1rem;
+
+}
+
+footer{
+    background: yellow;
+    height: 6vh;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    font-size: 20px;
+}
+
+ @media(max-width:1000px){ 
+    body::before{
+        background-position: right;
+    }
+    
+    #navbar span{
+        font-size: 40px;
+        color: yellow;
+        dislay: nne;
+    }
+    
+    .ul-span-body{
+        margin: 50% 0;
+        position: fixed;
+        cursor: pointer;
+        background: yellowgreen;
+        width: 100vw;
+    }
+    
+    .ul-span{
+        width: 80px;
+        height: 15px;
+        background: white;
+        margin: 7px auto;
+        display: block;
+    }
+    
+    .ul-span:hover{
+        background: yellow;
+    }
+    
+    .spanall:active > .ul-span{
+        background: yellow;
+        border: 2px #fff solid;
+    }
+
+    .spanall{
+        position: absolute;
+        right: 7px;
+        cursor: pointer;
+    }
+    
+    .spanall:hover > .ul-span{
+            background: yellow;
+    }
+    
+    #ul{
+       position: absolute;
+       left: -1000px;
+       transition: ease-in-out 0.2s;
+    }
+
+    .show #ul{
+        left: 0px;
+        position: fixed;
+    }
+    
+    ul{
+        flex-direction: column;
+        height: 100vh;
+        width: 50vw;
+        font-size: 25px;
+        align-items: center;
+        margin: 0px 10px 0px 0px;
+        padding: 10% 0;
+    }
+
+    li{
+        border-bottom: 1px yellow solid;
+        text-align: center;
+        margin-bottom: 25%;
+    }
+
+    li:active{
+        background: #fff;
+        
+    }
+
+    li a:active{
+        color: black;
+    }
+    
+    #navbar h1{
+        font-size: 50px;
+        flex-direction: column;
+    }
+    
+    #span{
+        font-size: 200px;
+    }
+    
+    p{
+        font-size: 35px;
+    }
+    
+    .social{
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .social a:hover{
+        background: none;
+    }
+    
+    .social a{
+        width: 90px;
+        margin: 0px 10px 0px 0px;
+        height: 90px;
+    }
+    
+    .social img{
+        height: 80px;
+        width: 80px;
+        padding: 0px 0px 0px 0px;
+        margin: 5px 0px 0px 4px;
+    }
+        
+    
+    /* about */
+    
+    #about{
+    display: nne;
+    background: rgba(0,0,0,0.7);
+    margin-top: 20px;
+    padding: 30px 0px 0px 0px;
+    }
+
+    .about-me{
+        margin: 30px 0px 0px 0px;
+    }
+    
+    #about-me{
+        display: flex;
+    }
+    
+    #about-me p{
+        font-size: 25px;
+        font-weight: lighter;
+    }
+    
+    #about-me span{
+        height: 1px;
+        width: 100px;
+        display: block;
+        background: white;
+        margin: 7px 0px 0px 5px;
+    }
+    
+    .about-me h3{
+        font-size:35px;
+    }
+    
+     #about-bio{ 
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #bio-img{
+        height: 100%;
+        width: 60%;
+        
+    }
+    
+    #about-bio h3{
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    #about-bio p{
+        font-size: 25px;
+    }
+
+    /* hair style rate */
+    
+    .rate{
+        background: rgba(0,0,225,0.2);
+        margin: 50px 50px 0px 50px;
+        padding: 10px auto;
+        border-radius: 20px;
+    }
+    
+    .rate h4{
+        font-size: 30px;
+    }
+    
+    #all-side-cut{
+        flex-direction: column;
+    }
+    
+    .label{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 80px 0px 50px;
+        background: ble;
+        width: 100%;
+    }
+    
+    .cut{
+        margin: 0px 0px 0px 70px;
+    }
+    
+    .hair-cut-style{
+        display: flex;
+    }
+    
+    .hair-cut-style .style-cut{
+        font-size: 25px;
+        margin: 0px 0px 0px 0px;
+        width: 100px;
+    }
+    
+    .hair-cut-style p{
+        font-size: 25px;
+        margin: 0px 0px 0px 200px;
+        font-weight: lighter;
+     } 
+    
+    .length{
+        height: 30px;
+        width: 80%;
+    }
+    
+    .length .skin-cut{
+        height: 30px;
+        width: 100%;
+    }
+    
+
+/* work done */
+
+    #work-done h1{
+        font-size: 50px;
+        color: yellow;
+    }
+    
+    #my-workdone{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: solid yellow 2px;
+    }
+    
+    .image-work-done{
+        display: flex;
+    }
+    
+    .image-work-done img{
+        height: 300px;
+        width: 300px;
+        margin-left: 5px;
+    }
+
+    /* service section */
+
+    #service{
+        margin: 30px 0px 0px 0px;
+        padding: 0px 20px 0px 20px;
+    }
+    
+    #my-service-heading{
+        margin-bottom: 20px;
+    }
+
+    .my-service{
+        flex-direction: column;
+    }
+    
+    .my-service-detail button{
+        font-size: 30px;
+        width: 200px;
+        height: 80px;
+    }
+    
+        /* my contact */
+    
+   footer{
+        background: yellow;
+        height: 100px;
+        width: 100vw;
+        color: black;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer p{
+        font-size: 25px;
+    }
+
+}
+
+@media(max-width:150px){
+    li{
+        
+        margin-bottom: 100%;
+    }
+}
+
+@media(max-width:320px){
+    li{
+        
+        margin-bottom: 50%;
+    }
+
+    #ebs{
+        font-size: 15px;
+    }
+    
+    #span{
+        font-size: 40px;
+    }
+}
+
+@media(max-width:700px){
+
+    body::before{
+        background-position: right;
+    }
+    
+    header h1{
+        
+    }
+    
+    #navbar{
+        height: 55px;
+        padding-top: 5px;
+    }
+    
+    #navbar h1{
+        font-size: 10px;
+        height: 40px;
+    }
+    
+    #navbar span{
+        font-size: 20px;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    #ebs{
+        font-size: 20px;
+    }
+    
+    #span{
+        font-size: 45px;
+    }
+    
+    p{
+        font-size: 15px;
+    }
+    
+    .spanall{
+        right: 15px;
+    }
+    
+    .ul-span-body{
+        margin-right: 1%;
+        position: fixed;
+        cursor: pointer;
+    }
+    
+    .ul-span{
+        width: 40px;
+        height: 7px;
+    }
+    
+    #ul{
+        font-size: 30px;
+        border-radius: 50px;
+    }
+
+    
+    ul{
+        font-size: 15px;
+        height: 95vh;
+        width: 60vw;
+        margin: 23% 0px 0px 0px;
+        background: yellow;
+        color: black;
+        padding: 7% 10px 0px 10px;
+        border-radius: 3%;
+    }
+
+    a{
+        color: black;
+        border-bottom: solid black;
+    }
+    
+    li{
+        margin: 12vh 0px 0px 0px;
+    }
+    
+    .social a{
+        height: 55px;
+        width: 55px;
+        padding: 2px 0px 0px 2px;
+        border: none;
+    }
+    
+    .social img{
+        height: 50px;
+        width: 50px;
+        margin: 0px 0px 0px 0px;
+    }
+    
+    /* about */
+    
+     #about-me p{
+        font-size: 15px;
+    }
+    
+    #about-me span{
+        height: 1px;
+        margin: 8px 0px 0px 5px;
+    }
+    
+    .about-me h3{
+        font-size: 20px;
+    }
+    
+    #bio-img{
+        height: 100%;
+        width: 70%;
+        
+    }
+    
+    #about-bio h3{
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    #about-bio p{
+        font-size: 17px;
+    }
+    
+    .rate h4{
+        font-size: 20px;
+    }
+    
+    #all-side-cut{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .hair-cut-style .style-cut{
+        font-size: 18px;
+        margin: 0px 0px 0px 0px;
+        width: 100px;
+    }
+    
+    .hair-cut-style p{
+        font-size: 16px;
+        margin: 0px 0px 0px 50px;
+        font-weight: lighter;
+    }
+    
+    .length{
+        height: 15px;
+        border-radius: 10px;
+    }
+    
+    .length .skin-cut,
+    .length .low-cut,
+    .length .side-cut,
+    .length .round-cut,
+    .length .afro-cut{
+        height: 15px;
+        border-radius: 10px;
+    }
+
+    /* work done */
+    
+    #work-done{
+        padding: 30px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+     }
+    
+    #work-done h1{
+        font-size: 25px;
+    }
+    
+    .image-work-done img{
+        height: 100px;
+        width: 100px;
+    }
+    
+    button{
+        height: 30px;
+        width: 80px;
+        font-size: 13px;
+    }
+
+    /* Service */
+
+    .my-service-detail{
+        height: 300px;
+        width: 90%;
+        font-size: 20px;
+    }
+    
+    .my-service-detail img{
+        height: 200px;
+        width: 200px;
+    }
+    
+    .my-service-detail button{
+        font-size: 17px;
+        width: 100px;
+        height: 50px;
+    }
+    
+    /* contact */
+    
+    #contact{
+        padding-top: 10%;
+    }
+
+    #my-contact{
+        flex-direction: column;
+    }
+    
+    .my-contact-info{
+        width: 100%;
+    }
+    
+    .my-contact-info p{
+        font-size: 15px;
+        margin: 5px 0px 5px 0px;
+    }
+    
+    .my-contact-info strong{
+        font-size: 15px;
+        align-items: center;
+    }
+    
+    .my-contact-info img{
+        height: 50px;
+        width: 50px;
+        margin-right: 20px;
+    }
+    
+    .input-text{
+        margin: 20px 0px 5px 0px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+     }
+    
+    input{
+        height: 50px;
+        width: 100%;
+        font-size: 15px;
+        outline: none;
+        border: yellow solid 1px;
+    }
+
+    .textarea{
+        width: 100%;
+    }
+
+    textarea{
+        height: 150px;
+        width: 100%;
+        font-size: 15px;
+        border: yellow solid 1px;
+    }
+    
+    ::placeholder{
+        color: white;
+    }
+    
+   footer{
+        height: 60px;
+    }
+    
+    footer p{
+        font-size: 17px;
+    }
+}
